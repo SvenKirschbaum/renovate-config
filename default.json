@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "rebaseWhen": "conflicted",
+  "vulnerabilityAlerts": {
+    "addLabels": ["security"]
+  },
+  "major": {
+    "addLabels": [
+      "major"
+    ]
+  },
+  "minor": {
+    "addLabels": [
+      "minor"
+    ]
+  },
+  "patch": {
+    "addLabels": [
+      "patch"
+    ]
+  }
+}
