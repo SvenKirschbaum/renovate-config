@@ -3,6 +3,10 @@
     "config:base"
   ],
   "rebaseWhen": "conflicted",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "transitiveRemediation": true,
   "vulnerabilityAlerts": {
     "addLabels": ["security"]
   },
