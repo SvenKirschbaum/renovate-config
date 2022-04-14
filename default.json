@@ -24,5 +24,11 @@
     "addLabels": [
       "patch"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["aws-sdk", "constructs"],
+      "schedule": ["after 9pm on sunday"]
+    }
+  ]
 }
