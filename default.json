@@ -4,7 +4,10 @@
   ],
   "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "addLabels": [
+      "maintenance"
+    ]
   },
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
