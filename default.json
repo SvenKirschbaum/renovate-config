@@ -39,7 +39,7 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "schedule": "on sunday",
+      "schedule": "on sunday"
     }
   ]
 }
