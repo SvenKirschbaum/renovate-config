@@ -1,9 +1,7 @@
 {
   "extends": [
-    "config:base",
-    "group:allNonMajor"
+    "config:base"
   ],
-  "schedule": "on sunday",
   "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "enabled": true,
@@ -29,5 +27,19 @@
     "addLabels": [
       "patch"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "schedule": "on sunday",
+    }
+  ]
 }
