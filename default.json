@@ -5,6 +5,8 @@
   "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "enabled": true,
+    "groupName": "all non-major dependencies",
+    "groupSlug": "all-minor-patch",
     "addLabels": [
       "maintenance"
     ]
