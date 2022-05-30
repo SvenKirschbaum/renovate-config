@@ -7,6 +7,7 @@
     "enabled": true,
     "groupName": "all non-major dependencies",
     "groupSlug": "all-minor-patch",
+    "schedule": "on sunday",
     "addLabels": [
       "maintenance"
     ]
