@@ -8,6 +8,7 @@
     "groupName": "all non-major dependencies",
     "groupSlug": "all-minor-patch",
     "schedule": "on sunday",
+    "commitMessageAction": "Update",
     "addLabels": [
       "maintenance"
     ]
