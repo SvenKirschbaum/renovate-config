@@ -50,6 +50,10 @@
       "matchPackagePrefixes": [
         "@middy/"
       ]
+    },
+    {
+      "matchPackagePatterns": ["^@aws-cdk\/.*-alpha$"],
+      "ignoreUnstable": false
     }
   ]
 }
