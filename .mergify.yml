@@ -26,6 +26,8 @@ pull_request_rules:
   - name: automatic approve for Renovate pull requests
     conditions:
       - author=renovate[bot]
+      - "#check-failure=0"
+      - "#check-pending=0"
       - or:
         - label=minor
         - label=patch
