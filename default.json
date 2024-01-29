@@ -32,6 +32,11 @@
       "patch"
     ]
   },
+  "digest": {
+    "addLabels": [
+      "digest"
+    ]
+  },
   "packageRules": [
     {
       "matchPackagePatterns": [
