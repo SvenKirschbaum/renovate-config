@@ -58,6 +58,13 @@
       ]
     },
     {
+      "groupName": "oidc-client-ts",
+      "matchPackageNames": [
+        "oidc-client-ts",
+        "react-oidc-context"
+      ]
+    },
+    {
       "matchPackagePatterns": ["^@aws-cdk\/.*-alpha$"],
       "ignoreUnstable": false
     }
