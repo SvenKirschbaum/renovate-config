@@ -11,9 +11,11 @@ queue_rules:
     conditions: []
 
 pull_request_rules:
-  - name: automatic merge for master
+  - name: automatic merge for master/main
     conditions:
-      - base=master
+      - or:
+        - base=main
+        - base=master
       - -draft
       - label!=do-not-merge
       - or:
