@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  "timezone": "Europe/Berlin"
+  "timezone": "Europe/Berlin",
   "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "enabled": true,
