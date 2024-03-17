@@ -8,7 +8,7 @@
     "enabled": true,
     "groupName": "all non-major dependencies",
     "groupSlug": "all-minor-patch",
-    "schedule": "on sunday",
+    "schedule": "before 4am on sunday",
     "commitMessageAction": "Update",
     "addLabels": [
       "maintenance"
@@ -50,7 +50,7 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "schedule": "on sunday"
+      "schedule": "before 4am on sunday"
     },
     {
       "groupName": "middy",
