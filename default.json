@@ -20,6 +20,9 @@
   "vulnerabilityAlerts": {
     "addLabels": ["security"]
   },
+  "docker": {
+    "pinDigests": true
+  },
   "hostRules": [
     {
       "matchHost": "docker.io",
