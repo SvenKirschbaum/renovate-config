@@ -20,6 +20,16 @@
   "vulnerabilityAlerts": {
     "addLabels": ["security"]
   },
+  "hostRules": [
+    {
+      "matchHost": "docker.io",
+      "hostType": "docker",
+      "username": "fallobst22",
+      "encrypted": {
+        "password": "wcFMA/xDdHCJBTolAQ/9EWqi5wO1jeSDiREUVGz5OMC9blhH6h5GpSWopQYos+aMGTjDAne/CPL/uHs2PvTrypAzd+h7pSvUltk3nnjg1DCkW7nrojqasXs67QfF/i0tu4RHkXVQZyyoVPRyVQ0vT8pUyLTDPeQdM4PoABys4WTJNLKk5QcfIkG/QpozWmBJ7ECVD8eFs9hW/Le47keL8Jc4wj/4m3DhLrP2bff53Bi9aWxElFxgGx3O16zXz50kNBVuk6qS9xMCxngkI5zg2H7D0qjf/oTGqwXMNqZoOQy2QrosEYo6zlTOmyWjYK1+KaXNBtAYqjm/KEnZr3eXGhgTBHWxLl5FzogmV+7QrmkBTgRMjjdgpR9U02iGZQNrzIs89F0jSMwioJNHy8oTDVr0URCXkoKE6u/ud1cqaDPLyqlCsqcGngiBVhuqNQUVw6p5BSowhtlC9qUp63FS3+yMtVw6e/43erRpYX4tejbe5NOL+XyYI8UHhTZw90obMkGzA8LYPgOVR1htXtSzSZEq4ZIO7j9eEHwkcrQD1n70at0J8ZOVwucPL/MB5Y0CE26aM1MvZq9Bd7cDJS1Ic5ePBlZavEELIYoFqo1It7xZmteWQCA8olJOwlABI7m4MYffxFgC6WMklnPLKXkxpxnDrIm6AyD+lZh8tNyOXNuXqlZGqU3QFG9aHgxLoKHSeQELAzbgz3B8EqHfKnY3qGBSCp+p6u/aCQ6nl17xcM/8IrPR081fpn4Z9uRv2QYBxMvfKNr8cr+ZR5Zl+1btLRJ9Xj0FLg1ssHTgPZRG5Gy+DK37HXlUk+gKBDjADY8eY35qhMPmxnkFuBFM71Vm1vqVRiMNQ/Z6ul0"
+      }
+    }
+  ],
   "major": {
     "addLabels": [
       "major"
