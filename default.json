@@ -77,6 +77,10 @@
     {
       "matchPackagePatterns": ["^@aws-cdk\/.*-alpha$"],
       "ignoreUnstable": false
+    },
+    {
+      "matchPackageNames": ["ingress-nginx"],
+      "allowedVersions": "<4.10.1 || >4.11.0"
     }
   ]
 }
