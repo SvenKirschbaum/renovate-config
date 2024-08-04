@@ -2,13 +2,13 @@ defaults:
   actions:
     queue:
       name: default
-      method: squash
-      commit_message_template: |-
-        {{ title }} (#{{ number }})
-        {{ body }}
 queue_rules:
   - name: default
     conditions: []
+    commit_message_template: |-
+        {{ title }} (#{{ number }})
+        {{ body }}
+    merge_method: squash
 
 pull_request_rules:
   - name: automatic merge for master/main
