@@ -79,6 +79,10 @@
     {
       "matchPackageNames": ["ingress-nginx"],
       "allowedVersions": "<4.10.1 || >4.11.0"
+    },
+    {
+      "packagePatterns": ["^lscr.io\\/linuxserver\\/"],
+      "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
     }
   ]
 }
