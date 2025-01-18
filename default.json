@@ -10,7 +10,7 @@
     "enabled": true,
     "groupName": "all non-major dependencies",
     "groupSlug": "all-minor-patch",
-    "schedule": "before 10am on saturday",
+    "schedule": "before 12am on saturday",
     "commitMessageAction": "Update",
     "addLabels": [
       "maintenance"
