@@ -69,7 +69,7 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "schedule": "before 10am on saturday"
+      "schedule": "before 12am on saturday"
     },
     {
       "groupName": "oidc-client-ts",
