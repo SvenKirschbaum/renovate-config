@@ -10,7 +10,7 @@
     "enabled": true,
     "groupName": "all non-major dependencies",
     "groupSlug": "all-minor-patch",
-    "schedule": "before 12am on saturday",
+    "schedule": "before 12pm on saturday",
     "commitMessageAction": "Update",
     "addLabels": [
       "maintenance"
@@ -69,7 +69,7 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "schedule": "before 12am on saturday"
+      "schedule": "before 12pm on saturday"
     },
     {
       "groupName": "oidc-client-ts",
