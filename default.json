@@ -89,6 +89,12 @@
     {
       "packagePatterns": ["^lscr.io\\/linuxserver\\/"],
       "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": "typescript",
+      "groupSlug": "typescript",      
     }
   ]
 }
