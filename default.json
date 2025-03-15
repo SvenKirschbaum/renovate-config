@@ -94,7 +94,7 @@
       "matchPackageNames": ["typescript"],
       "matchUpdateTypes": ["minor"],
       "groupName": "typescript",
-      "groupSlug": "typescript",      
+      "groupSlug": "typescript"
     }
   ]
 }
