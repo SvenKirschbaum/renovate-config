@@ -32,6 +32,7 @@ pull_request_rules:
       - "#check-pending=0"
       - or:
         - label=minor
+        - label=security
         - label=patch
         - label=maintenance
         - label=digest
@@ -46,6 +47,7 @@ pull_request_rules:
           - "#check-failure>=1"
           - and:
             - -label=minor
+            - -label=security
             - -label=patch
             - -label=maintenance
             - -label=digest
