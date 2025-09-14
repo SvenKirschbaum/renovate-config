@@ -1,14 +1,14 @@
 {
   "extends": [
-    "config:base",
-    "group:recommended",
-    "group:monorepos"
+    "config:best-practices"
   ],
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "timezone": "Europe/Berlin",
   "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": "before 4am on sunday",
+    "schedule": "on sunday",
     "addLabels": [
       "maintenance"
     ]
@@ -16,9 +16,6 @@
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
     "addLabels": ["security"]
-  },
-  "docker": {
-    "pinDigests": true
   },
   "hostRules": [
     {
@@ -66,7 +63,7 @@
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "schedule": "before 12pm on saturday"
+      "schedule": "on saturday"
     },
     {
       "groupName": "oidc-client-ts",
