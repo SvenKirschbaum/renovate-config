@@ -89,6 +89,10 @@
       "matchUpdateTypes": ["minor"],
       "groupName": "typescript",
       "groupSlug": "typescript"
+    },
+    {
+      "matchPackageNames": ["docker.io/envoyproxy/gateway-helm"],
+      "pinDigests": false
     }
   ],
   "customManagers": [
