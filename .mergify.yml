@@ -27,7 +27,9 @@ pull_request_rules:
       queue:
   - name: automatic approve for Renovate pull requests
     conditions:
-      - author=renovate[bot]
+      - or:
+        - author=renovate[bot]
+        - author=mend[bot]
       - "#check-failure=0"
       - "#check-pending=0"
       - or:
@@ -42,7 +44,9 @@ pull_request_rules:
     conditions:
       - -draft
       - or:
-        - -author=renovate[bot]
+        - and:
+          - -author=renovate[bot]
+          - -author=mend[bot]
         - or:
           - "#check-failure>=1"
           - and:
