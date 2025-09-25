@@ -93,6 +93,11 @@
     {
       "matchPackageNames": ["docker.io/envoyproxy/gateway-helm"],
       "pinDigests": false
+    },
+    {
+      "matchDepNames": "k3s",
+      "groupName": null,
+      "groupSlug": null
     }
   ],
   "customManagers": [
@@ -105,6 +110,22 @@
         "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\W+.*releases\\\/download\\\/(?<currentValue>.*)\\\/"
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["system-upgrade-plan/plan.yaml"],
+      "matchStrings": ["\\s+version:\\s*(?<currentValue>\\S+)"],
+      "depNameTemplate": "k3s",
+      "versioningTemplate": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$",
+      "datasourceTemplate": "custom.k3s"
     }
-  ]
+  ],
+  "customDatasources": {
+    "k3s": {
+      "defaultRegistryUrlTemplate": "https://update.k3s.io/v1-release/channels",
+      "transformTemplates": [
+        "{\"releases\":[{\"version\": $$.(data[id = 'stable'].latest),\"sourceUrl\":\"https://github.com/k3s-io/k3s\",\"changelogUrl\":$join([\"https://github.com/k3s-io/k3s/releases/tag/\",data[id = 'stable'].latest])}],\"sourceUrl\": \"https://github.com/k3s-io/k3s\",\"homepage\": \"https://k3s.io/\"}"
+      ]
+    }
+  }
 }
