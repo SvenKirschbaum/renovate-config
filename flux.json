@@ -49,7 +49,7 @@
       "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
     },
     {
-      "matchPackageNames": ["docker.io/envoyproxy/gateway-helm"],
+      "matchFileNames": ["**/oci-repository.yaml"],
       "pinDigests": false
     },
     {
