@@ -82,6 +82,13 @@
       "matchUpdateTypes": ["minor"],
       "groupName": "typescript",
       "groupSlug": "typescript"
+    },
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": ["@trautonen/cdk-dns-validated-certificate"],
+      "minimumReleaseAge": null
     }
   ]
 }
