@@ -28,7 +28,7 @@
   },
   "packageRules": [
     {
-      "matchPackagePatterns": [
+      "matchPackageNames": [
         "*"
       ],
       "matchUpdateTypes": [
@@ -45,7 +45,7 @@
       "allowedVersions": "<4.10.1 || >4.11.0"
     },
     {
-      "packagePatterns": ["^lscr.io\\/linuxserver\\/"],
+      "matchPackageNames": ["/^lscr.io\\/linuxserver\\//"],
       "versioning": "regex:^(?<compatibility>.*?)-(?<major>v?\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)[\\.-]*r?(?<build>\\d+)*-*r?(?<release>\\w+)*"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["system-upgrade-plan/plan.yaml"],
+      "managerFilePatterns": ["/system-upgrade-plan/plan.yaml/"],
       "matchStrings": ["\\s+version:\\s*(?<currentValue>\\S+)"],
       "depNameTemplate": "k3s",
       "versioningTemplate": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$",
