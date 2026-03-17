@@ -84,6 +84,17 @@
       "groupSlug": "typescript"
     },
     {
+      "matchPackageNames": [
+        "vite",
+        "@vitejs/*"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": "vite major dependencies",
+      "groupSlug": "vite-major"
+    },
+    {
       "matchDatasources": [
         "npm"
       ],
