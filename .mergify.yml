@@ -8,8 +8,8 @@ queue_rules:
   - name: default
     merge_conditions: []
     commit_message_template: |-
-        {{ title }} (#{{ number }})
-        {{ body }}
+      {{ title }} (#{{ number }})
+      {{ body }}
     merge_method: squash
 
 merge_queue:
@@ -20,47 +20,47 @@ pull_request_rules:
   - name: automatic merge for master/main
     conditions:
       - or:
-        - base=main
-        - base=master
+          - base=main
+          - base=master
       - -draft
       - label!=do-not-merge
       - or:
-        - "#approved-reviews-by>=1"
-        - and:
-          - author=SvenKirschbaum
-          - "body~=#ignore-review"
+          - "#approved-reviews-by>=1"
+          - and:
+              - author=SvenKirschbaum
+              - "body~=#ignore-review"
     actions:
       queue:
   - name: automatic approve for Renovate pull requests
     conditions:
       - or:
-        - author=renovate[bot]
-        - author=mend[bot]
+          - author=renovate[bot]
+          - author=mend[bot]
       - "#check-failure=0"
       - "#check-pending=0"
       - or:
-        - label=minor
-        - label=security
-        - label=patch
-        - label=maintenance
-        - label=digest
+          - label=minor
+          - label=security
+          - label=patch
+          - label=maintenance
+          - label=digest
     actions:
       review:
   - name: assign pr
     conditions:
       - -draft
       - or:
-        - and:
-          - -author=renovate[bot]
-          - -author=mend[bot]
-        - or:
-          - "#check-failure>=1"
           - and:
-            - -label=minor
-            - -label=security
-            - -label=patch
-            - -label=maintenance
-            - -label=digest
+              - -author=renovate[bot]
+              - -author=mend[bot]
+          - or:
+              - "#check-failure>=1"
+              - and:
+                  - -label=minor
+                  - -label=security
+                  - -label=patch
+                  - -label=maintenance
+                  - -label=digest
     actions:
       assign:
         add_users:
