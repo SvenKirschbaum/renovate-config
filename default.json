@@ -92,13 +92,6 @@
       ],
       "groupName": "vite major dependencies",
       "groupSlug": "vite-major"
-    },
-    {
-      "matchDatasources": [
-        "npm"
-      ],
-      "matchPackageNames": ["@trautonen/cdk-dns-validated-certificate"],
-      "minimumReleaseAge": null
     }
   ]
 }
