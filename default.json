@@ -51,6 +51,9 @@
       "digest"
     ]
   },
+  "npm": {
+    "skipInstalls": false
+  },
   "packageRules": [
     {
       "matchPackageNames": [
